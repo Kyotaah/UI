@@ -1816,6 +1816,8 @@ end
 
 -- Interface Management
 local GUIHolder = isStudio and script.Parent:WaitForChild("Starvine UI") or game:GetObjects("rbxassetid://86467455075715")[1]
+print("GUIHolder:", GUIHolder)
+if not GUIHolder then error("GUIHolder is nil!") end
 
 local SizeBleh = nil
 
